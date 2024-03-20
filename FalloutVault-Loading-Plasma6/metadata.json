@@ -1,0 +1,20 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "andreamarano2004@gmail.com",
+                "Name": "LuMarans30"
+            }
+        ],
+        "Category": "",
+        "Description": "Fallout Vault Animation Splashscreen for KDE 6",
+        "Id": "FalloutVault-Loading-Plasma6",
+        "License": "MIT",
+        "Name": "Fallout Vault Animation",
+        "Website": "https://github.com/LuMarans30/FalloutVault-Loading-Plasma6"
+    },
+    "Keywords": "fallout;vault;kde-logo",
+    "X-Plasma-APIVersion": "2"
+}
+
