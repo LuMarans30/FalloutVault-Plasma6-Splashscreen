@@ -1,15 +1,27 @@
-import QtQuick 2.5
-import QtQuick.Window 2.2
+import QtQuick
+import QtMultimedia
 
-Image {
-    property int currentImage:1
+Rectangle {
+    id: root
+    color: "black"
 
-    anchors.fill: parent
-    source: "images/frame-"+currentImage+".png"
-
-    NumberAnimation on currentImage {
-        from: 1
-        to: 120
-        duration: 6000
+    MediaPlayer {
+        id: player
+        source: "video/anim.webm"
+        videoOutput: videoOutput   
+    }
+    
+    VideoOutput {
+        id: videoOutput
+        fillMode: VideoOutput.PreserveAspectCrop  
+        anchors.bottom: parent.bottom
+        anchors.top: parent.top
+        anchors.horizontalCenter: parent.horizontalCenter
+        width: root.width
+        height: root.height
+    }
+    
+    Component.onCompleted: {
+        player.play()
     }
 }
